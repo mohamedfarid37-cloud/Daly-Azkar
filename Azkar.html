@@ -1,48 +1,232 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
- <meta charset="UTF-8">
-<meta name="viewport"
-content="width-device-width,
-initial-scale=1.0">
-<title>Daily Azkar</title>
-<link rel="stylesheet" href="asset/css/style.css">
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>أذكارك اليومية</title>
+  <meta name="description" content="موقع بسيط وهادئ يساعدك على قراءة الأذكار اليومية ومتابعتها بسهولة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
-  <header>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="Azkar.html" class="brand">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M3 21h18"/>
+            <path d="M5 21v-7l7-5 7 5v7"/>
+            <path d="M12 4c1.5 1.1 2.5 2.4 2.5 4H9.5c0-1.6 1-2.9 2.5-4Z"/>
+            <path d="M9 21v-5h6v5"/>
+          </svg>
+        </span>
+        <span>أذكارك اليومية<small>Daily Azkar</small></span>
+      </a>
 
-<h1>Daily Azkar</h1>
-<p>Your Simle Daily Azkar Remembeance Wibsite</p>
+      <nav class="nav" id="navMenu">
+        <a class="active" href="Azkar.html">الرئيسية</a>
+        <a href="pages/morning.html">أذكار الصباح</a>
+        <a href="pages/evening.html">أذكار المساء</a>
+        <a href="pages/sleep.html">أذكار النوم</a>
+        <a href="pages/after-prayer.html">أذكار بعد الصلاة</a>
+        <a href="pages/about.html">عني</a>
+      </nav>
 
-  </header>  
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+    </div>
+  </header>
 
-  <nav class="nav">
-<a href="Azkar.html">Home</a>
-<a href="./pages/morning.html">Morning</a>
-<a href="./pages/evening.html">Evening</a>
-<a href="./pages/sleep.html">Sleep</a>
-<a href="./pages/after-prayer.html">After Prayer</a>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">ابدأ بالأذكار في وقتك وبهدوء</span>
 
-  </nav>
+          <h1>أذكار يومية مرتبة وواضحة<br>لتكون أقرب وأسهل في المتابعة</h1>
 
-<main class="main">
-    <section class="card">
-        <h2>Choose a Catrgory</h2>
-         <ul>
-            <li ><a href="./pages/morning.html">Morning Azkar</a></li>
-            <li ><a href="./pages/evening.html">Evening Azkar</a></li>
-            <li ><a href="./pages/sleep.html">Sleep Azkar</a></li>
-            <li ><a href="./pages/after-prayer.html">After Prayer Azkar</a></li>
-      </ul>
+          <p class="lead">
+            اختر القسم المناسب لك، ثم ابدأ القراءة وتابع تقدمك بسهولة داخل كل صفحة.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="pages/morning.html">ابدأ الآن</a>
+            <a class="btn btn-secondary" href="#sections">تصفح الأقسام</a>
+          </div>
+
+          <div class="stats-row">
+            <div class="stats-card reveal delay-1">
+              <span>الأقسام</span>
+              <strong>الصباح • المساء • النوم • بعد الصلاة</strong>
+            </div>
+            <div class="stats-card reveal delay-2">
+              <span>المتابعة</span>
+              <strong>عداد بسيط لكل ذكر</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal delay-1">
+          <div class="hero-orbit"></div>
+          <div class="hero-ring"></div>
+
+          <!-- <div class="hero-badge top">   </div> -->
+          <!-- <div class="hero-badge bottom" >واذكر ربك  اذا نسيت </div> </div> -->
+
+          <div class="hero-center">
+            <div class="hero-emblem">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="1.5" opacity="0.25"/>
+                <circle cx="60" cy="60" r="40" stroke="currentColor" stroke-width="1.2" opacity="0.18"/>
+                <path d="M60 24C63 31 69 36 77 39C69 42 63 47 60 54C57 47 51 42 43 39C51 36 57 31 60 24Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M60 54V84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="60" cy="92" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M28 60H38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                <path d="M82 60H92" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                <path d="M39 39L46 46" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+                <path d="M74 74L81 81" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+                <path d="M39 81L46 74" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+                <path d="M74 46L81 39" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-</main>
 
-<footer class="footer">
+    <section class="section" id="sections">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">الأقسام</span>
+          <h2>اختر ما يناسب وقتك الحالي</h2>
+          <p>ابدأ بالقسم الذي تريد، ثم أكمل الأذكار بهدوء وبتركيز.</p>
+        </div>
 
-<p>&copy; 2026 Daily Azkar</p>
-    
-   </footer>
+        <div class="categories-grid">
+          <a class="category-card reveal" href="pages/morning.html">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </div>
+            <h3>أذكار الصباح</h3>
+            <p>ابدأ يومك بأذكار مرتبة وواضحة وسهلة القراءة.</p>
+            <span class="arrow-link">الدخول للقسم ←</span>
+          </a>
 
- </body>
+          <a class="category-card reveal delay-1" href="pages/evening.html">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+              </svg>
+            </div>
+            <h3>أذكار المساء</h3>
+            <p>اختم يومك بذكر هادئ يساعدك على الطمأنينة والسكينة.</p>
+            <span class="arrow-link">الدخول للقسم ←</span>
+          </a>
+
+          <a class="category-card reveal delay-2" href="pages/sleep.html">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+                <path d="M16.5 5.5h.01"/>
+              </svg>
+            </div>
+            <h3>أذكار النوم</h3>
+            <p>واجهة مريحة قبل النوم مع تركيز أكبر على النص ووضوح القراءة.</p>
+            <span class="arrow-link">الدخول للقسم ←</span>
+          </a>
+
+          <a class="category-card reveal delay-3" href="pages/after-prayer.html">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>
+              </svg>
+            </div>
+            <h3>أذكار بعد الصلاة</h3>
+            <p>تابع الأذكار بعد الصلاة بترتيب بسيط يساعدك على الإكمال بسهولة.</p>
+            <span class="arrow-link">الدخول للقسم ←</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container dual-grid">
+        <article class="feature-card reveal">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M20 6 9 17l-5-5"/>
+            </svg>
+          </div>
+          <h3>متابعة بسيطة داخل كل صفحة</h3>
+          <p>لكل ذكر عداد واضح يساعدك على معرفة ما أنجزته بسهولة.</p>
+        </article>
+
+        <article class="feature-card reveal delay-1">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 3v18"/>
+              <path d="M3 12h18"/>
+            </svg>
+          </div>
+          <h3>تصميم واضح ومريح</h3>
+          <p>الواجهة هادئة وسهلة، لتبقى القراءة أوضح من غير أي ازدحام.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="eyebrow">صفحة إضافية</span>
+          <h3>تعرف عليّ</h3>
+          <p>
+            أضفت صفحة تعريفية مختصرة فيها معلوماتي بشكل بسيط وواضح.
+          </p>
+          <div class="about-actions">
+            <a class="btn btn-primary" href="pages/about.html">فتح الصفحة</a>
+          </div>
+        </div>
+
+        <div class="contact-list">
+          <a class="contact-link" href="pages/about.html">
+            <span class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20 21a8 8 0 0 0-16 0"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </span>
+            <span>نبذة مختصرة عني</span>
+          </a>
+
+          <a class="contact-link" href="pages/morning.html">
+            <span class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </span>
+            <span>ابدأ بأذكار الصباح</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>أذكارك اليومية</strong>
+        <p class="footer-note">موقع بسيط يساعدك على قراءة الأذكار اليومية ومتابعتها بسهولة.</p>
+      </div>
+      <span class="meta">© 2026 Mohamed Farid</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

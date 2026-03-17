@@ -1,80 +1,264 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
- <meta charset="UTF-8">
-<meta name="viewport"
-content="width-device-width,
-initial-scale=1.0">
-<title>Morning Azkar</title>
-<link rel="stylesheet" href="../asset/css/morning.css">
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>أذكار الصباح | Daily Azkar</title>
+  <meta name="description" content="ابدأ يومك بصفاء وطمأنينة مع أذكار مرتبة في واجهة سهلة ومريحة، مع إمكانية متابعة الإنجاز والعد لكل ذكر." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
+<body data-page="morning.html">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="../Azkar.html" class="brand">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18"/><path d="M5 21v-7l7-5 7 5v7"/><path d="M12 4c1.5 1.1 2.5 2.4 2.5 4H9.5c0-1.6 1-2.9 2.5-4Z"/><path d="M9 21v-5h6v5"/></svg></span>
+        <span>Daily Azkar<small>ذكر يومي بتجربة أهدأ وأجمل</small></span>
+      </a>
+      <nav class="nav" id="navMenu"><a href="../Azkar.html">الرئيسية</a>
+<a class="active" href="morning.html">أذكار الصباح</a>
+<a href="evening.html">أذكار المساء</a>
+<a href="sleep.html">أذكار النوم</a>
+<a href="after-prayer.html">أذكار بعد الصلاة</a>
+<a href="about.html">عني</a></nav>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
 
-<body>
-  <header class="header">
+  <main>
+    <section class="section page-hero">
+      <div class="container page-shell">
+        <aside class="sidebar-stack">
+          <div class="info-card reveal">
+            <span class="eyebrow">نور لبداية اليوم</span>
+            <h3>أذكار الصباح</h3>
+            <p>ابدأ يومك بصفاء وطمأنينة مع أذكار مرتبة في واجهة سهلة ومريحة، مع إمكانية متابعة الإنجاز والعد لكل ذكر.</p>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+            <div class="progress-stats">
+              <span>تم <strong data-completed>0</strong></span>
+              <span>من <strong data-total>12</strong></span>
+              <span data-percent>0%</span>
+            </div>
+            <div class="inline-actions">
+              <button class="btn btn-secondary" data-reset>إعادة الضبط</button>
+            </div>
+          </div>
 
-<h1>Morning Azkar</h1>
+          <div class="quote-panel reveal delay-1">
+            <blockquote>اذكر الله في بداية يومك، لتبدأ بقلب أهدأ ونفس مطمئنة.</blockquote>
+          </div>
+        </aside>
 
-  </header>  
+        <section class="zikr-grid">
+          <article class="zikr-card reveal delay-1" data-target="1">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">1 مرة</span>
+                  <h3>آية الكرسي</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">الله لا اله الا هو الحي القيوم لا تاخذه سنة ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يؤوده حفظهما وهو العلي العظيم</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-2" data-target="3">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">3 مرة</span>
+                  <h3>سورة الإخلاص</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">قل هو الله احد<br>الله الصمد<br>لم يلد ولم يولد<br>ولم يكن له كفوا احد</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-0" data-target="3">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">3 مرة</span>
+                  <h3>سورة الفلق</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">قل اعوذ برب الفلق<br>من شر ما خلق<br>ومن شر غاسق اذا وقب<br>ومن شر النفاثات في العقد<br>ومن شر حاسد اذا حسد</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-1" data-target="3">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">3 مرة</span>
+                  <h3>سورة الناس</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">قل اعوذ برب الناس<br>ملك الناس<br>اله الناس<br>من شر الوسواس الخناس<br>الذي يوسوس في صدور الناس<br>من الجنة والناس</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-2" data-target="1">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">1 مرة</span>
+                  <h3>دعاء الصباح</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">اصبحنا واصبح الملك لله والحمد لله لا اله الا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير رب اسالك خير ما في هذا اليوم وخير ما بعده واعوذ بك من شر ما في هذا اليوم وشر ما بعده رب اعوذ بك من الكسل وسوء الكبر رب اعوذ بك من عذاب في النار وعذاب في القبر</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-0" data-target="1">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">1 مرة</span>
+                  <h3>اللهم بك أصبحنا</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">اللهم بك اصبحنا وبك امسينا وبك نحيا وبك نموت واليك النشور</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-1" data-target="3">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">3 مرة</span>
+                  <h3>رضيت بالله</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">رضيت بالله ربا وبالاسلام دينا وبمحمد صلى الله عليه وسلم نبيا</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-2" data-target="3">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">3 مرة</span>
+                  <h3>العافية</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">اللهم عافني في بدني اللهم عافني في سمعي اللهم عافني في بصري لا اله الا انت</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-0" data-target="3">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">3 مرة</span>
+                  <h3>الاستعاذة من الكفر والفقر</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">اللهم اني اعوذ بك من الكفر والفقر واعوذ بك من عذاب القبر لا اله الا انت</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-1" data-target="7">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">7 مرة</span>
+                  <h3>حسبي الله</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">حسبي الله لا اله الا هو عليه توكلت وهو رب العرش العظيم</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-2" data-target="3">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">3 مرة</span>
+                  <h3>بسم الله الذي لا يضر</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">بسم الله الذي لا يضر مع اسمه شيء في الارض ولا في السماء وهو السميع العليم</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article><article class="zikr-card reveal delay-0" data-target="100">
+              <div class="zikr-top">
+                <div>
+                  <span class="badge">100 مرة</span>
+                  <h3>تسبيح</h3>
+                </div>
+                <div class="zikr-counter">
+                  <button class="btn-mini" data-minus>-</button>
+                  <span class="counter-value">0</span>
+                  <button class="btn-mini" data-plus>+</button>
+                </div>
+              </div>
+              <p class="zikr-text">سبحان الله وبحمده</p>
+              <div class="zikr-actions">
+                <button class="btn-mini btn-complete" data-complete>تم</button>
+              </div>
+            </article>
+        </section>
+      </div>
+    </section>
+  </main>
 
-  <nav class="nav">
-<a href="../Azkar.html">Home</a>
-<a href="morning.html">Morning</a>
-<a href="evening.html">Evening</a>
-<a href="sleep.html">Sleep</a>
-<a href="after-prayer.html">After Prayer</a>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Daily Azkar</strong>
+        <p class="footer-note">لا تنسونا في دعائكم </p> </div>
+      <span class="meta">© 2026 Mohamed Farid</span>
+    </div>
+  </footer>
 
-  </nav>
-
-<main class="main">
-    <section class="card">
-  <p>لله لا اله الا هو الحي القيوم لا تاخذه سنة ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يؤوده حفظهما وهو العلي العظيم
-(مرة واحدة)</p>    
-  
-  <p>قل هو الله احد
-الله الصمد
-لم يلد ولم يولد
-ولم يكن له كفوا احد
-(3 مرات)</p>    
-  <p>قل هو الله احد
-الله الصمد
-لم يلد ولم يولد
-ولم يكن له كفوا احد
-(3 مرات)</p>    
-  <p>قل اعوذ برب الناس
-ملك الناس
-اله الناس
-من شر الوسواس الخناس
-الذي يوسوس في صدور الناس
-من الجنة والناس
-(3 مرات)</p>    
-  <p>اصبحنا واصبح الملك لله والحمد لله لا اله الا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير رب اسالك خير ما في هذا اليوم وخير ما بعده واعوذ بك من شر ما في هذا اليوم وشر ما بعده رب اعوذ بك من الكسل وسوء الكبر رب اعوذ بك من عذاب في النار وعذاب في القبر
-(مرة واحدة)</p>    
-  <p>اللهم بك اصبحنا وبك امسينا وبك نحيا وبك نموت واليك النشور
-(مرة واحدة)</p>    
-  <p>رضيت بالله ربا وبالاسلام دينا وبمحمد صلى الله عليه وسلم نبيا
-(3 مرات)</p>    
-  <p>اللهم عافني في بدني اللهم عافني في سمعي اللهم عافني في بصري لا اله الا انت
-(3 مرات)</p>    
-  <p>اللهم اني اعوذ بك من الكفر والفقر واعوذ بك من عذاب القبر لا اله الا انت
-(3 مرات)</p>  
-  <p>حسبي الله لا اله الا هو عليه توكلت وهو رب العرش العظيم
-(7 مرات)</p>  
-  <p>بسم الله الذي لا يضر مع اسمه شيء في الارض ولا في السماء وهو السميع العليم
-(3 مرات)</p>  
-  <p>سبحان الله وبحمده
-(100 مرة)</p>  
- 
-  
-
-
-  
-</main>
-
-<footer class="footer">
-
-<p>&copy; 2026 Daily Azkar</p>
-    
-   </footer>
-
- </body>
+  <script src="../assets/js/main.js"></script>
+</body>
 </html>
